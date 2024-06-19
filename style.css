@@ -1,0 +1,889 @@
+@font-face {
+    font-family: 'Turbinado';
+    src: url('Fonts/turbinado-bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Msans';
+    src: url('Fonts/Museo\ Sans\ Cyrl\ 900.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Grotesk';
+    src: url('Fonts/URW\ Grotesk.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Porter';
+    src: url('Fonts/Porter\ Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+:root{
+    --choco-color : #502c1c;
+    --choco-white : #faf5ef;
+    --choco-red : #f8005c;
+    --choco-sketch : #704a3b;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--choco-white);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header-div{
+    display: flex;
+    align-items: center;
+    background-color: var(--choco-white);
+    height: 10rem;
+}
+
+.galaxy-trademark{
+    flex-grow: 0.1;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    align-self: center;
+    height: 10rem;
+}
+
+#galaxy-trademark-img{
+    width: 13rem;
+    height: 9rem;
+}
+
+.choco-story{
+    margin-top: 1.2rem;
+    display: flex;
+    width: 18rem;
+    justify-content: space-between;
+}
+
+.choco-story a:hover{
+    color: var(--choco-red);
+}
+
+.choco-story a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.font-bold{
+    font-size: 1.1rem;
+    font-family: 'Msans';
+    color: var(--choco-color);
+}
+
+.where-cont-search{
+    flex-grow: 0.1;
+    margin-left: auto;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    width: 330px;
+    height: 50px;
+    margin-right: 50px;
+    font-size: 13px;
+    
+}
+
+.font-small{
+    font-size: 0.9rem;
+}
+
+.w-c-s a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.w-c-s a:hover{
+    color: var(--choco-red);
+    #search-icon path{
+        fill: var(--choco-red);
+    }
+}
+
+.contact::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 7.5%;
+    margin-left: -1rem;
+    background-color: #000;
+}
+
+#search-icon{
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+.search-div{
+    flex: 0.6;
+    display: flex;
+}
+
+.search{
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 6px;
+}
+
+.hand-coco{
+    display: flex;
+    height: 25rem;
+    height: 29rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hand-coco-img{
+    position: absolute;
+    height: 29rem;
+    width: 100%;
+    z-index: -1;
+    filter: blur(1px) brightness(50%);
+}
+
+.hand-coco-text{
+    color: white;
+    font-family: 'Turbinado';
+    font-weight: bold;
+    font-size: 5.5rem;
+    text-align: center;
+}
+
+
+.choco-sketch{
+    display: flex;
+    margin-top: -3.53rem;
+    background-color: var(--choco-color);
+    height: 100vh;
+    overflow-y: hidden;
+
+}
+
+.first-section{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.first-sketch{
+    margin-left: -6rem;
+    margin-top:  7rem;
+}
+
+.first-sketch-img{
+    height: 33rem;
+    width: 43rem;
+}
+
+.first-sketch-img path{
+    fill: var(--choco-sketch);
+}
+
+.two-small-sketch{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31rem;
+}
+
+.first-small-sketch{
+    height: fit-content;
+    width: 'fit-content';
+    margin-top: 1.5rem;
+    margin-left: -9rem;
+}
+
+.first-small-sketch-img, path{
+    fill: var(--choco-sketch);
+    height: 12rem;
+    width: 12rem;
+}
+
+.second-small-sketch{
+    height: fit-content;
+    width: fit-content;
+    align-self: flex-end;
+    margin-top: 10rem;
+}
+
+.second-small-sketch-img, path{
+    fill: var(--choco-sketch);
+    height: 24rem;
+    width: 24rem;
+}
+
+
+.first-section-galaxy-text-button{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.first-img-galaxy-div{
+    width: 50%;
+    height: fit-content;
+    margin-top: 2rem;
+}
+
+.first-galaxy-img{
+    width: 35rem;
+    height: 35rem;
+}
+
+.text-button-main{
+    display: flex;
+    width: 50%;
+    height: 100vh;
+}
+
+.text-button{
+    height: 19rem;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    margin-top: 1.5rem;
+    color: white;
+    font-family: 'Grotesk';
+    font-weight: bold;
+}
+
+.second-text{
+    font-family: 'Msans';
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.first-section-button{
+    background-color: var(--choco-red);
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 2.9rem;
+    border-radius: 2rem;
+    font-family: 'Msans';
+    font-size: 0.9rem;
+    margin-top: 2.5rem;
+}
+
+.first-section-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.our-collections{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collections-first-text span{
+    font-family: 'Turbinado';
+    font-weight: normal;
+    color: var(--choco-color);
+    font-size: 4rem;
+}
+
+.curved-line-collections{
+    margin-top: 1rem;
+}
+
+.cards-collections{
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.first-card-collections{
+    display: flex;
+    flex-direction: column;
+}
+
+.first-card-collections-text a{
+    text-decoration: none;
+    /* color: var(--choco-color); */
+}
+
+.first-card-collections-text-galaxy{
+    font-size: 1.1em;
+}
+
+.first-card-collections-img-div img{
+    transition: transform 0.5s;
+}
+
+.first-card-collections-img-div:hover img{
+    transform: scale(1.1);
+}
+
+.collections-text a:hover{
+    color: var(--choco-red);
+}
+
+.collections-text{
+    font-family: 'Msans';
+    font-size: 1.5rem;
+    margin-left: 6rem;
+    margin-top: 1.5rem;
+}
+
+.collections-text a{
+    color: var(--choco-color);
+}
+
+.view-range{
+    background-color: var(--choco-red);
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 2.9rem;
+    border-radius: 2rem;
+    font-family: 'Msans';
+    font-size: 0.9rem;
+    align-self: center;
+    margin-top: 0rem;
+    margin-right: 0.2rem;                                                                                                                    rem;
+    margin-top: 1rem;
+}
+
+.view-range a{
+    text-decoration: none;
+    color: white;
+}
+
+.second-card-collections{
+    display: flex;
+    flex-direction: column;
+}
+
+.collections-text a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+#minis{
+    text-align: center;
+    padding-left: 0.9rem;
+}
+
+.collections-gifting{
+    font-size: 1.4rem;
+}
+
+.third-card-collections-button{
+    margin-left: 4.5em;
+}
+
+.about-us{
+    display: flex;
+    height: 38rem;
+}
+
+.about-us-img-div{
+    width: 100%;
+    height: 34rem;
+    margin-top: 4rem;
+}
+
+.about-us-img{
+    height: 34rem;
+}
+
+.about-us-texts{
+    position: absolute;
+    margin-top: 4rem;
+    display: flex;
+    height: 30rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    color: white;
+}
+
+.about-us-text{
+    width: fit-content;
+    margin-top: 4rem;
+    font-family: 'Msans';
+}
+
+.orgin-of-galaxy-about-us{
+    margin-top: 2rem;
+    font-family: 'Turbinado';
+    font-size: 4.5rem;
+}
+
+.curved-line-about-us{
+    margin-top: 3.5rem;
+    height: 0.3rem;
+    margin-right: 9px;
+    width: 4rem;
+}
+
+.discovery-story-about-us{
+    margin-top: 3rem;
+    font-family: 'Grotesk';
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.about-us-button{
+    margin-top: 2rem;
+    background-color: var(--choco-red);
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 2.9rem;
+    border-radius: 3rem;
+    font-family: 'Msans';
+}
+
+.discover-our-world{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-world{
+    align-self: center;
+    font-family: 'Turbinado';
+    font-size: 4rem;
+    color: var(--choco-color);
+}
+
+.curved-our-world{
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+.cards-our-world{
+    display: flex;
+    justify-content: space-around;
+}
+
+.first-card-our-world{
+    display: flex;
+    flex-direction: column;
+}
+
+.first-card-our-world-texts{
+    display: flex;
+    flex-direction: column;
+}
+
+.first-card-first-our-world-text{
+    margin-top: 1rem;
+    font-family: 'Msans';
+    font-size: 1.5rem;
+    align-self: center;
+    color: var(--choco-color);
+}
+
+.first-card-our-span{
+    text-align: center;
+    margin-left: 3rem;
+}
+
+.first-card-second-our-world-text{
+    margin-top: 1rem;
+    font-family: 'Grotesk';
+    font-size: 1.1rem;
+    color: var(--choco-color);
+}
+
+.second-our-world-text-span{
+    margin-left: 4rem;
+}
+
+.first-card-our-button{
+    background-color: var(--choco-red);
+    color: white;
+    height: 3rem;
+    text-align: center;
+    line-height: 2.9rem;
+}
+
+.second-card-our-world{
+    display: flex;
+    flex-direction: column;
+}
+
+.second-card-our-world-texts{
+    display: flex;
+    flex-direction: column;
+}
+
+#how{
+    margin-left: 8.5rem;
+}
+
+.memorable{
+    margin-left: 8rem;
+}
+
+.second-card-our-button{
+    color: white;
+}
+
+.visit-our-social{
+    display: flex;
+    flex-direction: column;
+    height: 105vh;
+    overflow: hidden;
+}
+
+.visit-our-social-text{
+    align-self: center;
+    margin-top: 6rem;
+    font-family: 'Turbinado';
+    font-weight: bold;
+    font-size: 4.2rem;
+    color: var(--choco-color);
+}
+
+.curved-visit-our-social{
+    align-self: center;
+    margin-top: 3rem;
+}
+
+.scroll-visit-out-social{
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 1rem;
+    height: 15rem;
+    overflow-y: hidden;
+    padding-left: 2rem;
+}
+
+.scroll-visit-out-social::-webkit-scrollbar {
+    display: none;
+}
+
+.first-card-scroll {
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('Images/images\ \(11\).jpg') no-repeat center center/cover;
+}
+
+
+.card-scroll{
+    flex: 0 0 auto;
+    height: 13rem;
+    width: 13.5rem;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.instagram-icon-scroll{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: invert(1);
+}
+
+.second-card-scroll{
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('Images/images\ \(10\).jpg') no-repeat center center/cover;
+}
+
+.third-card-scroll{
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('Images/images\ \(9\).jpg') no-repeat center center/cover;
+}
+
+.fourth-card-scroll{
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('Images/images\ \(8\).jpg') no-repeat center center/cover;
+}
+
+.fifth-card-scroll{
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('Images/images\ \(7\).jpg') no-repeat center center/cover;
+}
+
+.sixth-card-scroll{
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('Images/images\ \(6\).jpg') no-repeat center center/cover;
+}
+
+.seventh-card-scroll{
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('Images/images\ \(5\).jpg') no-repeat center center/cover;
+}
+
+.eight-card-scroll{
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('Images/images\ \(4\).jpg') no-repeat center center/cover;
+}
+.nine-card-scroll{
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('Images/images\ \(3\).jpg') no-repeat center center/cover;
+}
+.ten-card-scroll{
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('Images/images\ \(2\).jpg') no-repeat center center/cover;
+}
+.eleven-card-scroll{
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('Images/images.jpg') no-repeat center center/cover;
+}
+.twovelve-card-scroll{
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('Images/images-almond.jpg') no-repeat center center/cover;
+}
+.thirteen-card-scroll{
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('Images/bar.jpg') no-repeat center center/cover;
+}
+
+.scroll-div{
+    display: flex;
+    height: 5px;
+    justify-content: center;
+}
+
+.first-bar{
+    background-color: var(--choco-red);
+    border-radius: 5px;
+}
+
+.scroll-bar{
+    border-style: none;
+    width: 7rem;
+}
+
+.second-bar{
+    background-color:#ff93ba;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.last-galaxy{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
+    width: 61rem;
+    margin-left: 2rem;
+}
+
+.last-galaxy-img{
+    width: 13rem;
+    height: 9rem;
+}
+
+.last-texts{
+    margin-top: 1.5rem;
+    display: flex;
+    width: 45rem;
+    justify-content: space-around;
+    height: 1rem;
+}
+
+.last-text a{
+    text-decoration: none;
+    color: var(--choco-color);
+}
+
+.last-text{
+    font-family: 'Msans';
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.last-text:hover a{
+    color: var(--choco-red);
+}
+
+.last-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.wave-div
+
+.wave{
+    width: 100%;
+    height: 5rem;
+}
+
+.wave path{
+    fill: var(--choco-color);
+}
+
+.last-section{
+    margin-top: -0.3rem;
+    height: 104vh;
+    width: 100%;
+    background-color: var(--choco-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.last-first-section{
+    display: flex;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.first-parag{
+    flex: 1;
+    display: flex;
+    height: 70%;
+}
+
+.follow-us{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.8rem;
+}
+
+.follow-us-text{
+    color: white;
+    font-family: 'Msans';
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+}
+
+.follow-us-icons{
+    display: flex;
+    width: 12.4rem;
+    justify-content: space-between;
+}
+
+.second-parag{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.last-second-first-section{
+    display: flex;
+    width: 41rem;
+    justify-content: space-between;
+}
+
+.supply-cookie-ad{
+    display: flex;
+    height: 6rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.parag-links a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Grotesk';
+}
+
+.modern-privacy-access{
+    display: flex;
+    flex-direction: column;
+}
+
+.last-second-second-section{
+    margin-top: 3rem;
+}
+
+.last-second-second-section span{
+    color: white;
+    font-family: 'Grotesk';
+    font-size: smaller;
+    
+}
+
+
+.margin{
+    margin-top: 1rem;
+}
+
+.horizontal-line{
+    position: relative;
+    margin-top: 1.5rem;
+    border: none;
+    background-color: #ab958c;
+    height: 1px;
+    width: 79rem;
+}
+
+.last-finall{
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+.last-left-text-button{
+    margin-left: 2.7rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.last-left-text{
+    color: white;
+    font-family: 'Msans';
+    font-size: 1.7rem;
+}
+
+.final-left-button{
+    background-color: var(--choco-color);
+    border: 2px solid white;
+    width: 9rem;
+    color: white;
+}
+
+.last-right-text{
+    width: 50%;
+    display: flex;
+}
+
+.final-right-text{
+    margin-left: auto;
+    margin-right: 2rem;
+    align-self: flex-end;
+    font-family: 'Msans';
+    color: white;
+    font-size: 3rem;
+}
+
